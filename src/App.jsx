@@ -33,6 +33,17 @@ function App() {
     <form onClick={handlesubmit()}>
       <input type='text'  value={form.name}placeholder='Enter the name' onChange={(e) => setForm(name,e.target.value)}></input>
       <input type='email' value={form.email}placeholder='Enter the email' onChange={(e)=>setForm(email,e.target.value)}></input>
+      <input type='password' value={form.email}placeholder='Enter the password' onChange={(e)=>setForm(password,e.target.value)}></input>
+      <div>
+        {user.length === 0 ?(<p>No user added</p>):
+         <ul>
+          <li key={u.id}>
+            {user.map(u) = (
+              <button onClick={handlesubmitpass}></button>
+            )}
+          </li>
+          </ul>}
+      </div>
     </form>
   )
 }
